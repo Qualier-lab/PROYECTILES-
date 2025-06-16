@@ -18,6 +18,16 @@ clock = pygame.time.Clock()
 
 font = pygame.font.SysFont(None, 36)
 
+# Cargar imágenes
+player_image = pygame.image.load('player_image.png')
+projectile_image = pygame.image.load('projectile_image.png')
+bullet_image = pygame.image.load('bullet_image.png')
+
+# Ajustar el tamaño de las imágenes si es necesario
+player_image = pygame.transform.scale(player_image, (20, 20))
+projectile_image = pygame.transform.scale(projectile_image, (30, 30)
+bullet_image = pygame.transform.scale(bullet_image, (10, 10))  
+
 player_pos = [WIDTH // 2, HEIGHT // 2]
 player_radius = 10
 
